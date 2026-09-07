@@ -1,11 +1,10 @@
 """
 uv add --dev pytest
-
 uv run pytest
 """
 
 
-from day11.agent import calculate_calculator
+from day21.agent import calculate_calculator
 
 
 
@@ -16,3 +15,7 @@ def test_calculator_tool():
 def test_calculator_error():
     result = calculate_calculator.invoke({"expression": "1 / 0"})
     assert "Error" in result
+
+def test_calculator_error22():
+    result = calculate_calculator.invoke({"expression": "1 / 0"})
+    assert "Error" in result    
