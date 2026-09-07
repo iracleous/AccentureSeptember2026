@@ -1,7 +1,7 @@
 services:
   langgraph-agent:
     build: .
-    container_name: day11-api
+    container_name: myapp
     ports:
       - "8000:8000"
     environment:
